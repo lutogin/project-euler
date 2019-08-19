@@ -3,16 +3,16 @@
 Найдите самый большой палиндром, полученный умножением двух трехзначных чисел."""
 
 
-def find_max_polydrom(max_num: int):
+def find_max_polindrom(max_num: int):
 
-    def is_polydrom(n: int):
+    def is_polindrom(n: int):
         _n = str(n)[::-1]
         return int(_n) == n
 
     min_num = max_num // 10
 
-    res = [i*j for i in range(min_num, max_num) for j in range(min_num, i) if is_polydrom(i*j)]
+    res = [i*j for i in range(min_num, max_num) for j in range(min_num, i) if is_polindrom(i*j)]
     return max(res)
 
 
-print(find_max_polydrom(1000))
+print(find_max_polindrom(1000))
