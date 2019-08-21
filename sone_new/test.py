@@ -8,7 +8,7 @@ def coun_alb(c_str: str) -> int:
 
     summary = 0
     for l in raw_str:
-        summary += ALPHABET.index(l) + 1
+        summary += (ALPHABET.index(l) if l in ALPHABET else -1) + 1
 
     return summary
 
