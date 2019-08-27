@@ -61,4 +61,5 @@ def max_sum(limit: int) -> int:
     return max_gen_val
 
 
-print(max_sum(13))
+if __name__ == '__main__':
+    print(max_sum(13))

@@ -14,4 +14,5 @@ def find_max_denominator(n: int):
     return None
 
 
-print(find_max_denominator(600851475143))
+if __name__ == '__main__':
+    print(find_max_denominator(600851475143))

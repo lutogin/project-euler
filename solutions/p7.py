@@ -15,4 +15,5 @@ def simple_in_number(limit):
     return result[-1]
 
 
-print(simple_in_number(1001))
+if __name__ == '__main__':
+    print(simple_in_number(1001))

@@ -28,7 +28,7 @@ L.append("20 73 35 29 78 31 90 01 74 31 49 71 48 86 81 16 23 57 05 54")
 L.append("01 70 54 71 83 51 54 69 16 92 33 48 61 43 52 01 89 19 67 48")
 
 
-def max_mult_matrix(str_matrix: list, limit: int) -> tuple:
+def max_mult_matrix(str_matrix: list, limit: int) -> dict:
     """
     В ходе решил несколько расширить вывод, будет выводить макисмальный результат умножения, а также тот ряд чисел
     который есть максимальный.
@@ -67,10 +67,10 @@ def max_mult_matrix(str_matrix: list, limit: int) -> tuple:
     max_m_v, max_nubers_v = get_matrix_m_max(verticeal_matrix)
 
     if max_m_h > max_m_v:
-        return max_m_h, max_nubers_h
+        return {'Max mult': max_m_h, 'numbers': max_nubers_h}
     else:
-        return max_m_v, max_nubers_v
+        return {'Max mult': max_m_v, 'numbers': max_nubers_v}
 
 
-a = max_mult_matrix(L, 5)
-print(a)
+if __name__ == '__main__':
+    print(max_mult_matrix(L, 5))

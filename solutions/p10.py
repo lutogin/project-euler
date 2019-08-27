@@ -16,4 +16,5 @@ def simple_number_sum(limit: int = 2000000) -> int:
     return sum(result)
 
 
-print(simple_number_sum(2000000))
+if __name__ == '__main__':
+    print(simple_number_sum(2000000))

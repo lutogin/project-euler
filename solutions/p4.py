@@ -17,4 +17,5 @@ def find_max_polindrom(max_num: int):
     return max(res)
 
 
-print(find_max_polindrom(1000))
+if __name__ == '__main__':
+    print(find_max_polindrom(1000))

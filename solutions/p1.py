@@ -9,4 +9,5 @@ def make_tf(n: int) -> int:
     return sum(r)
 
 
-print(make_tf(1000))
+if __name__ == '__main__':
+    print(make_tf(1000))

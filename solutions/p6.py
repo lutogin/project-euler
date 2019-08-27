@@ -18,4 +18,5 @@ def sum_sq(n: int) -> int:
     return s2 - s1
 
 
-print(sum_sq(20))
+if __name__ == '__main__':
+    print(sum_sq(20))

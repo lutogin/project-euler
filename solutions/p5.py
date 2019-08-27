@@ -13,4 +13,5 @@ def find_solution(limit):
     return None
 
 
-print(find_solution(20))
+if __name__ == '__main__':
+    print(find_solution(20))

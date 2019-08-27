@@ -18,4 +18,5 @@ def summ_even_fibo(max_val: int) -> int:
     return sum(e_fi)
 
 
-print(summ_even_fibo(4000000))
+if __name__ == '__main__':
+    print(summ_even_fibo(4000000))
